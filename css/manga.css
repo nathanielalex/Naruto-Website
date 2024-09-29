@@ -1,0 +1,195 @@
+@font-face   {
+    font-family: title;
+    src: url('../asset/ninja_naruto/njnaruto.ttf');
+}
+
+@font-face   {
+    font-family: main-font;
+    src: url('../asset/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+*{
+    margin:  0;
+}
+
+
+
+.coverflow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 30%;
+    height: 50vh;
+}
+
+.cover {
+    margin: 0 0px;
+    transition: transform 0.5s, margin 0.5s;
+    cursor: pointer;
+}
+
+.cover img {
+    max-width: 100px;
+    transition: transform 0.5s;
+}
+
+.cover img:hover{
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255, 255, 255),
+             0.3em 0.3em 1em rgba(190, 190, 190, 0.3);
+    border: 1px solid white;
+}
+
+.cover.selected img {
+    transform: scale(1.5);
+}
+
+.cover.selected {
+    margin: 0 0px;
+}
+
+.manga-title{
+    font-family: title;
+    font-size: 48px;
+    color: rgb(255, 123, 0);
+    -webkit-text-stroke: 5px black;
+    margin-bottom: 40px;
+}
+
+.manga-info{
+    font-family: main-font;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.left-side{
+    margin-right: 400px;
+}
+
+.btn{
+    font-family: main-font;
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover{
+    background: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-image: url('../asset/manga/naruto-bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken; */
+    position: relative;
+}
+
+.container-bg img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-top: 150px; */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (image) */
+.content-container {
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* max-width: 700px; */
+    /* color: black; */
+}
+
+.modal-content{
+    /* position: absolute; */
+    width: 85vw;
+    height: 80vh;
+    /* left: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../asset/bg-secondary.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: white; */
+}
+
+/* .modal-bg{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    
+    z-index: -1;
+} */
+
+.manga-details{
+    width: 35%;
+}
+
+/* Add Animation */
+.modal-content{  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+
+.close {
+    background-color: white;
+    padding: 0 5px 0 5px;
+    border: 2px solid black;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

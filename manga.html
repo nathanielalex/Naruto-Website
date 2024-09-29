@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENTr</title>
+    <link rel="stylesheet" href="css/manga.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container-bg">
+            <img src="asset/manga/naruto-bg.jpg" alt="" id="background">
+        </div>
+
+        <div class="left-side">
+            <div class="manga-title" id="manga-title">NARUTO</div>
+            <div class="manga-info">
+                <div class="category">AUTHOR : <span id="author">Masashi Kishimoto</span></div>
+                <div class="category">RATING : <span id="rating">4.0</span> / 5</div>
+                
+            </div>
+            <div class="btn" id="moreBtn">SEE MORE</div>
+        </div>
+        <div class="coverflow">
+            <div class="cover" data-index="0"><img src="asset/manga/naruto-manga.jpg" id="cover1"></div>
+            <div class="cover" data-index="1"><img src="asset/manga/naruto-shippuden.jpg" id="cover2"></div>
+            <div class="cover" data-index="2"><img src="asset/manga/boruto.jpg" id="cover3"></div>
+            <!-- Add more covers as needed -->
+        </div>
+        
+    </div>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="content-container">
+            <div class="modal-content">
+
+                <!-- <img class="modal-bg" id="modal-bg" src="asset/bg-secondary.png"> -->
+                <div class="manga-details">
+                    Summary: Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the village's leader.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="navbar">
+        <div class="navigation">
+            <a href="index.html" class="nav-btn">HOME</a>
+            <a href="characters.html" class="nav-btn">CHARACTER</a>
+            <a href="anime.html" class="nav-btn">ANIME</a>
+            <a href="manga.html" class="nav-btn">MANGA</a>
+            <a href="story.html" class="nav-btn">STORY</a>
+        </div>
+    </div>
+    <div class="navbar-bg">
+        
+    </div>
+    <div id="hamburger">
+        <img src="asset/hamburger-menu-logo.png" alt="">
+    </div>
+    <div class="logo">
+        <img src="./asset/naruto-logo.webp" alt="">
+    </div>
+    <script src="js/navbar.js"></script>
+
+
+    <script src="js/manga.js"></script>
+</body>
+</html>

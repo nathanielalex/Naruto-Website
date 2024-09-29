@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face   {
+    font-family: main-font;
+    src: url('../asset/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+/* body {
+    background-image: url('../asset/character/background.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+
+} */
+
+.logo img{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: auto;
+    z-index: 100;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    object-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.character-card{
+    border: 2px solid black;
+    width: 15vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+}
+
+.character-card img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+.card-name{
+    font-family: main-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.detail-btn{
+    font-family: main-font;
+    padding: 7px 0 7px 0;
+    text-align: center;
+    background: black;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.detail-btn:hover{
+    background: grey;
+}
+
+.character-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+#title{
+    font-family: main-font;
+    font-size: 56px;
+    width: 25vw;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    border: 2px solid black;
+    background: white;
+}
+
+#search-bar{
+    font-family: main-font;
+    font-size: 32px;
+    width: 50vw;
+    padding: 8px 0px 8px 15px;
+    /* text-align: center; */
+    border: 1px solid black;
+    background: white;
+    color: grey;
+}
+
+#header{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: -1; 
+    
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    /* overflow: auto;  */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.navbar{
+    display: none; 
+    width: 100%;
+    height: 13vh;
+    background-image: url('../asset/home/navbar/hamburger-menu-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.navigation{
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 9vw;
+}
+
+.nav-btn{
+    font-family: main-font;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#hamburger{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    z-index: 100;
+}
+
+#hamburger img{
+    width: 50px;
+    height: auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-top: 150px; */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+
+
+/* Modal Content (image) */
+.content-container {
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* max-width: 700px; */
+    /* color: black; */
+}
+
+.modal-content{
+    /* position: absolute; */
+    width: 85vw;
+    height: 80vh;
+    /* left: 20%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../asset/ninja-scroll-bg-revised.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: white; */
+}
+
+
+.manga-details{
+    width: 35%;
+}
+
+/* Add Animation */
+.modal-content{  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+
+.close {
+    background-color: white;
+    padding: 0 5px 0 5px;
+    border: 2px solid black;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}

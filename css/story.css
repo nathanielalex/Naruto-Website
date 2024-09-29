@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face   {
+    font-family: main-font;
+    src: url('../asset/fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+.story-title{
+    font-family: main-font;
+    font-size: 30px;
+}
+
+.story-section{
+    width: 80vw;
+    padding: 3px 0px 3px 0px;
+    
+    
+}
+
+.story-header{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    /* background: white; */
+    /* margin: 3px 10px 3px 10px; */
+}
+
+.story-section img{
+    width: 50px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.story-content{
+    overflow: hidden;
+    height: 35vh;
+    /* height: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid black;
+    transition: height 0.3s ease-out;
+}
+
+.content-container{
+    display: none;
+}
+
+.story-content .story-bg{
+    width: 100%;
+    height: 100%;
+    background-image: url('../asset/story/land-of-waves.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#content1 .story-bg{
+   
+    background-image: url('../asset/story/land-of-waves.jpg');
+    
+}
+#content2 .story-bg{
+   
+    background-image: url('../asset/story/chunnin-exam.jpg');
+    
+}
+#content3 .story-bg{
+   
+    background-image: url('../asset/story/konoha-crush.webp');
+    
+}
+
+.summary{
+    width: 90%;
+    height:fit-content;
+    text-align:justify;
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid black;
+    border-top: 0;
+    font-family: main-font;
+    color: white;
+    z-index: 20;
+}
+
+.scroll-container{
+    background-color: white;
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 3px 10px 3px 10px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../asset/story/bg.jpg');
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-box{
+    font-family: main-font;
+    padding: 10px 100px 10px 100px;
+    border: 2px solid black;
+    font-size: 64px;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.anime-name{
+    font-family: main-font;
+   
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.logo img{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: auto;
+    z-index: 100;
+}

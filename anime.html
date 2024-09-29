@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/anime.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="carousel-section" id="carousel">
+        <div class="card-section" >
+            <img src="./asset/anime/naruto.jpg" alt="" class="carousel-card" id="anime1">
+            <img src="./asset/anime/naruto-shippuden.jpg" alt="" class="carousel-card" id="anime2">
+            <img src="./asset/anime/boruto.jpg" alt="" class="carousel-card" id="anime3">
+        </div>
+    </div>
+    <div class="anime-content">
+
+        <div class="left-area">
+            <div class="synopsis">
+                <h2>SYNOPSIS</h2>
+                <hr>
+                <div class="synopsis-content" id="synopsis-content">
+                    Naruto is a Japanese anime series based on Masashi Kishimoto's manga of the same name. It follows the journey of Naruto Uzumaki, a young ninja with a dream of becoming the strongest ninja and the leader of his village, known as the Hokage. Naruto is an orphan, and he harbors the powerful Nine-Tails Fox, a fearsome creature sealed within him at birth.
+                </div>
+            </div>
+            <div class="gallery">
+                <h3>GALLERY</h3>
+                <hr>
+                <div class="gallery-content">
+                    <img src="./asset/anime/naruto/naruto.jpg" alt="" class="gallery-img" id="img1">
+                    <img src="./asset/anime/naruto/naruto-2.jpg" alt="" class="gallery-img" id="img2">
+                    <img src="./asset/anime/naruto/naruto-3.jpg" alt="" class="gallery-img" id="img3">
+                    <img src="./asset/anime/naruto/naruto-4.jpg" alt="" class="gallery-img" id="img4">
+                </div>
+            </div>
+        </div>
+        <div class="right-area">
+            <div class="anime-data">
+                <div class="category-box">
+
+                    <span class="category">AUTHOR</span> : <span class="data" id="author">MASASHI KISHIMOTO</span>
+                </div>
+                <div class="category-box">
+
+                    <span class="category">DIRECTOR</span> : <span class="data" id="director">HAYATO DATE</span>
+                </div>
+                <div class="category-box">
+
+                    <span class="category">STUDIO</span> : <span class="data" id="studio">PIERROT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <!-- <div id="caption"></div> -->
+    </div>
+    <div class="navbar">
+        <div class="navigation">
+            <a href="index.html" class="nav-btn">HOME</a>
+            <a href="characters.html" class="nav-btn">CHARACTER</a>
+            <a href="anime.html" class="nav-btn">ANIME</a>
+            <a href="manga.html" class="nav-btn">MANGA</a>
+            <a href="story.html" class="nav-btn">STORY</a>
+        </div>
+    </div>
+    <div class="navbar-bg">
+        
+    </div>
+    <div id="hamburger">
+        <img src="asset/hamburger-menu-logo.png" alt="">
+    </div>
+    <div class="logo">
+        <img src="./asset/naruto-logo.webp" alt="">
+    </div>
+    <script src="js/navbar.js"></script>
+    <script src="./js/anime.js"></script>
+</body>
+</html>
